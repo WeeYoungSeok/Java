@@ -128,10 +128,9 @@ public class ConstantDemo {
 	}
 
 	public static void main(String[] args) {
-
+		/*
 		Fruit type = Fruit.APPLE;
 		switch (type) {
-		
 		case APPLE:
 			// 결과는 같다.
 			// 하지만 구현 방법은 다르다.
@@ -141,6 +140,13 @@ public class ConstantDemo {
 			break;
 		default:
 			break;
+		}
+		*/
+		
+		for (Fruit f : Fruit.values()) {
+			// values는 enum Fruit안에 있는 필드를 하나씩 꺼내서 f에 담아준다.
+			System.out.println(f + " " + f.getColor());
+			// 마치 배열처럼 상수들을 하나씩 꺼내서 처리할 수 있는 기능도 제공한다.
 		}
 	}
 }
