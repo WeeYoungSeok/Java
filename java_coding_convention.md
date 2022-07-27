@@ -1,6 +1,4 @@
-### java coding convention
-
-<br/>
+## java coding convention
 
 - coding convention이란
   - 프로그래머 사이에서 약속한 코드 작성 양식이다.
@@ -45,4 +43,13 @@
   String unitAbbrev = "\u03bcs"; - 최악, 이게 뭔지 알 도리가 없음
   ```
 
-  
+
+<br/>
+
+#### 소스 파일의 구조
+
+- 다음 순서로 구성된다
+  - 라이센스 또는 저작권 정보(있을 경우)
+  - package 명세
+  - import 명세
+  - 최상위 클래스 시작 그리고 각 섹션들은 하나의 빈 줄로 구분한다.
