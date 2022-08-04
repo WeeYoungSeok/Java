@@ -69,3 +69,10 @@
   - static import 와 non-static import는 따로 모아서 블록을 만든다. 블록의 순서는 static, non static이다. 블록 사이에는 1줄의 개행을 넣는다. 각 블록 내에서의 정렬 순서는 ASCII 코드 정렬 순서이다.
   
   ❗ 상위 클래스를 import 할 때 포함되므로 스태틱 inner class를 위해 static import하지 않는다.
+
+<br/>
+
+#### Class 정의
+
+- 소스 내에서 최상의 클래스는 단 하나여야 한다.
+- 클래스 맴버들간의 순서는 정답이 없지만, 논리적 순서를 갖추는게 중요하다.
