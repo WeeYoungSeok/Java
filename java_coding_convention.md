@@ -85,3 +85,35 @@
 
 - 중괄호 { } (brace)
 - 괄호는 if, else, for, do 및 while문에 코드가 없거나 단 하나라도 생략하지 않습니다.
+  - 한줄 코드는 괄호 생략이 더 깔끔하다고 많이 생각하지만, 가이드에서는 오히려 가독성이 안좋다고 말하고 있다.
+- { 의 경우
+  - 여는 중괄호 전에는 개행하지 않는다.
+  - 여는 중괄호 뒤에서는 개행한다.
+- } 의 경우
+  - 닫는 괄호 앞에서 개행한다.
+  - 닫는 괄호 뒤의 개행은, 중괄호가 끝나거나 생성자, 메소드, 클래스가 끝날 때 개행한다. 그러므로, else나 *,*앞에서는 개행하지 않는다.
+
+```java
+return () -> {
+  while (condition()) {
+    method();
+  }
+};
+
+return new MyClass() {
+  @Override public void method() {
+    if (condition()) {
+      try {
+        something();
+      } catch (ProblemException e) {
+        recover();
+      }
+    } else if (otherCondition()) {
+      somethingElse();
+    } else {
+      lastThing();
+    }
+  }
+};
+```
+
