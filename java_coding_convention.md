@@ -117,3 +117,22 @@ return new MyClass() {
 };
 ```
 
+#### 비어있는 블록
+
+- 빈 블록은 개행하거나, 개행하지 않거나 상관없다. 하지만 멀티 블록일 경우 개행해주어야한다.
+
+  ```java
+  // This is acceptable
+    void doNothing() {}
+  
+    // This is equally acceptable
+    void doNothingElse() {
+    }
+  
+  // This is not acceptable: No concise empty blocks in a multi-block statement
+    try {
+      doSomething();
+    } catch (Exception e) {}
+  ```
+
+  
