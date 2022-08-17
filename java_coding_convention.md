@@ -162,3 +162,14 @@ return new MyClass() {
 - 보톤 줄 바꿈을 하는 이유는 열 제한(100자)을 초과하지 않기 위해서지만, 열 제한을 넘지 않아도 가독성을 위해 줄바꿈을 한다.
 
 ***메소드나 지역변수를 생성함으로써 줄바꿈 없이 열제한을 해결할 수 있다.***
+
+#### 줄바꿈 규칙
+
+- 줄바꿈의 더 높은 구문 수준 (**higher syntactic level**)에서 끊어주는 것을 원칙으로 한다.
+  1. 연산자 가은 상징들 (operatior-like-symbol)들 앞에서 끊어준다. 
+     - operator-like-symbol
+       - .
+       - 람다의 : :
+       - <T extemds Foo & Bar>와 같은 타입에서의 &
+       - catch(FooException | BarException e) 같은 캐치 블록에서의 |
+  2. , 는 앞에 오는 토근의 뒤에 적는다.
