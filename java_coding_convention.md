@@ -173,3 +173,7 @@ return new MyClass() {
        - <T extemds Foo & Bar>와 같은 타입에서의 &
        - catch(FooException | BarException e) 같은 캐치 블록에서의 |
   2. , 는 앞에 오는 토근의 뒤에 적는다.
+
+#### 줄바꿈 시 들여쓰기
+
+- 줄바꿈을 하고 나면 최초 행보다 최소 4자를 들여쓰기 한다.
