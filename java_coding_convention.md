@@ -201,4 +201,12 @@ return new MyClass() {
      }
      ```
 
-     
+  2. if, for, catch와 여는 괄호 ( 사이에 공백
+  
+  3. else, catch에 앞에 오는 닫는 중과호 } 사이에 공백
+  
+  4. { 중괄호 앞
+  
+     - 예외
+       1. @SomeAnnotation({a,b})
+       2. String[][] x = {{"foo"}} 처럼 {{ 사이에 공백이 필요없다.
