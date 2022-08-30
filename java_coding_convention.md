@@ -210,3 +210,11 @@ return new MyClass() {
      - 예외
        1. @SomeAnnotation({a,b})
        2. String[][] x = {{"foo"}} 처럼 {{ 사이에 공백이 필요없다.
+     
+  5. 이항 연산자 및 삼항 연산자의 앞 뒤, "operator-like" symbol도 마찬가지
+  
+     - 타입 영역 사이에 & <T extends Foo & Bar>
+     - multi catch 사이에 | catch (FooException | BarException e)
+     - foreach문 : for (String bar : foo)
+     - 람다의 화살표 (String str) -> str.length()
+     - 하지만 :: 와 . 은 앞뒤로 공백을 넣지 않는다.
